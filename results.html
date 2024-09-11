@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filtered Results</title>
+</head>
+<body>
+    <h1>Results for {{ keyword }}</h1>
+    <h2>Total Dimensions: {{ all_sizes | length }}</h2>
+    <h2>Total Filtered Dimensions (greater than specified size): {{ filtered_sizes | length }}</h2>
+    
+    <h3>Filtered Sizes:</h3>
+    <ul>
+        {% for size in filtered_sizes %}
+            <li>{{ size }}</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="/">Go back</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Dimension Filter Tool</title>
+</head>
+<body>
+    <h1>Filter Dimensions from PDF</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="keyword">Keyword (e.g., OL):</label>
+        <input type="text" name="keyword" required><br><br>
+        <label for="min_size">Minimum Size (in feet):</label>
+        <input type="text" name="min_size" required><br><br>
+        <label for="file">Choose PDF file:</label>
+        <input type="file" name="file" accept="application/pdf" required><br><br>
+        <input type="submit" value="Filter PDF">
+    </form>
+</body>
+</html>
